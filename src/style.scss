@@ -1,0 +1,95 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+*{
+  margin: 0;
+  padding:0;
+}
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+@mixin flex-box($jc,$ai,$ff){
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $ff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.fixed-card {
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.2509803922);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.cards {
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.2509803922);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.cards:hover {
+  transform: scale(1.01);
+}
+
+.cards:active {
+  transform: scale(0.98);
+}
+
+.text-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ml-ms{
+  margin-left: 5px;
+}
+.mr-ms{
+  margin-right: 5px;
+}
+
+.ml-ml{
+  margin-left: 15px;
+}
+.mr-ml{
+  margin-right: 15px;
+}
+
+@font-face {
+  font-family: 'qtbf';
+  src: url('./assets/fonts/.font-spider/qtbf.ttf');
+}
+@font-face {
+  font-family: 'zqljm';
+  src: url('./assets/fonts/.font-spider/zqljm.ttf');
+}
