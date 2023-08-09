@@ -39,7 +39,7 @@ window.addEventListener('resize', () => {
         </div>
       </template>
     </main>
-    <Footer v-if="!showGame" />
+    <Footer />
   </div>
 </template>
 

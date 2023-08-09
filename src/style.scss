@@ -87,9 +87,13 @@
 
 @font-face {
   font-family: 'qtbf';
-  src: url('./assets/fonts/.font-spider/qtbf.ttf');
+  src: url('./assets/fonts/qtbf.ttf') format('turetype');
 }
 @font-face {
   font-family: 'zqljm';
-  src: url('./assets/fonts/.font-spider/zqljm.ttf');
+  src: url('./assets/fonts/zqljm.ttf') format('turetype');
+}
+
+:deep(.el-button){
+  border:none;
 }

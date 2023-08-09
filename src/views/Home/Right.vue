@@ -2,7 +2,7 @@
   <div :class="mobileOpenState ? 'right-container-mobile' : 'right-container'">
     <div class="tips">
       <AchieveItems />
-      <StudentStatus />
+      <DateCircle />
     </div>
     <ScoreBar />
     <div class="game-area fixed-card">
@@ -16,7 +16,7 @@
 </template>
 <script setup lang="ts">
 import AchieveItems from "@/components/AchieveItems/index.vue";
-import StudentStatus from "@/components/StudentStatus/index.vue";
+import DateCircle from "@/components/DateCircle/index.vue";
 import ScoreBar from "@/components/ScoreBar/index.vue";
 import GameText from "@/components/GameText/index.vue";
 import GameBtn from "@/components/GameBtn/index.vue";

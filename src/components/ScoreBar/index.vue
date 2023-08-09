@@ -10,7 +10,10 @@
       <el-progress v-show="!mobileOpenState" class="score-progress" :text-inside="true" :stroke-width="16"
         :percentage="100" :status="pStatus" :format="formatNum" />
     </div>
-    <div class="student-time">第一年第一月</div>
+    <div class="student-time">
+      <el-tag color="orange" :hit="true" type="info" class="ml-ms tags" effect="dark">开心</el-tag>
+      <el-tag color="orange" :hit="true" type="info" class="ml-ms tags" effect="dark">兴奋</el-tag>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
