@@ -5,6 +5,44 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Postgraduate</title>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/snowfall.jquery.js"></script>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      /* .darkBg{background:#3a3a3a;} */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        /* background-color: #fff; */
+        z-index: 0;
+      }
+      .snowfall-flakes {
+        animation: sakura 1s linear 0s infinite;
+      }
+      @keyframes sakura {
+        0% {
+          transform: rotate3d(0, 0, 0, 0deg);
+        }
+        25% {
+          transform: rotate3d(1, 1, 0, 60deg);
+        }
+        50% {
+          transform: rotate3d(1, 1, 0, 0deg);
+        }
+        75% {
+          transform: rotate3d(1, 0, 0, 60deg);
+        }
+        100% {
+          transform: rotate3d(1, 0, 0, 0deg);
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -20,5 +58,37 @@
         src: url('./src/assets/fonts/zqljm.ttf');
       }
     </style>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(document).snowfall({
+          image: '/images/1.png',
+          flakeCount: 20,
+          minSpeed: 1,
+          minSize: 8,
+          maxSize: 15,
+        })
+        $(document).snowfall({
+          image: '/images/1.png',
+          flakeCount: 20,
+          minSpeed: 1,
+          minSize: 8,
+          maxSize: 15,
+        })
+        $(document).snowfall({
+          image: '/images/2.png',
+          flakeCount: 20,
+          minSpeed: 1,
+          minSize: 8,
+          maxSize: 15,
+        })
+        $(document).snowfall({
+          image: '/images/4.png',
+          flakeCount: 20,
+          minSpeed: 1,
+          minSize: 8,
+          maxSize: 15,
+        })
+      })
+    </script>
   </body>
 </html>
