@@ -1,6 +1,7 @@
 <template>
     <div :class="mobileOpenState ? 'btn-container-mobile' : 'btn-container'">
         <el-button type="primary" round>查阅论文</el-button>
+        <el-button type="warning" round>准备考试</el-button>
         <el-button type="success" round>休息</el-button>
     </div>
 </template>
@@ -24,7 +25,7 @@ const { mobileOpenState } = storeToRefs(useMainStore);
 }
 
 .btn-container-mobile {
-    height: 40%;
+    height: 36%;
     width: 100%;
 
     :deep(.el-button) {

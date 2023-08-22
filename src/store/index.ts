@@ -11,6 +11,7 @@ export const mainStore = defineStore(storeKey, {
       mobileOpenState: false, // 移动端开启状态
       themeTextColor: '#fff',
       showGame: false,
+      hopeValue: 0,
     }
   },
   getters: {
@@ -20,6 +21,9 @@ export const mainStore = defineStore(storeKey, {
       }
       return JSON.parse(localStorage.getItem(storeKey) + '')
     },
+    getHopeValue(state) {
+      return state.hopeValue
+    },
   },
   actions: {
     setInnerWidth(value: any) {
@@ -28,6 +32,9 @@ export const mainStore = defineStore(storeKey, {
     },
     setShowGame(value: any) {
       this.showGame = value
+    },
+    setHopeValue(value: number) {
+      this.hopeValue = value
     },
   },
   //   persist: true, // 持久化存储

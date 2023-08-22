@@ -1,6 +1,6 @@
 <template>
     <div class="text-container">
-        我是文本我是文本我是文本我是文本
+        准备好开始了吗
     </div>
 </template>
 <script setup lang="ts">
@@ -11,6 +11,7 @@
     width: 100%;
     color: #fff;
     font-weight: bold;
+    text-align: center;
 }
 </style>
   
